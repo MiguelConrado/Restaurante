@@ -87,7 +87,7 @@ button{
 button:hover{
     transform: translateY(-10px);
 }
-@media(max-width <= 450px) {
+@media(width <= 450px) {
     
 h1{
     font-size: 100px;
