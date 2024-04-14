@@ -14,14 +14,35 @@
     height: 77vh;
     width: 85px;
     margin: 70px 30px 70px 40px;
-    padding: 10px 0px 10px 0px;
+    padding: 15px 0px 15px 0px;
     border-radius: 20px;
     background-color: black;
     box-shadow: 7px 7px 17px rgba(0, 0, 0, 0.438);
 }
+
+/* IMG DO GARFO */
+#container-opçoes:hover{
+    & #div-garfo{
+        background-color: black;
+    }
+    & #img-garfo{
+        filter: brightness(0) invert(1);
+    }
+}
+
+#div-garfo{
+    background-color: var(--cor1);
+    & #img-menu{
+        filter: brightness(0) invert(0);
+    }
+}
+
+
+
+/* DIV QUE CONTORNA A IMG */
 .div-img{
     margin: 24px auto 40px auto;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 25px 20px 25px;
     display: flexbox;
 }
 .div-img:hover{
@@ -29,19 +50,14 @@
     & img{
         filter: brightness(0) invert(0);
     }
-    & #img-menu{
-        filter: brightness(0) invert(0);
-    }
 }
 .img-tabela{
     display: block;
     margin: auto;
 }
-#img-menu{
-    filter: brightness(0) invert(1);
-}
 
 /* Fim do Menu kkkkk */
+
 
 /* Inicio do cadapio */
 h1{
@@ -50,7 +66,7 @@ h1{
     font-size: 50px;
     
     display: inline-block;
-    position: ;
+    position: absolute;
     
     margin: 70px 70px 30px 30px;
 
@@ -59,17 +75,8 @@ h1{
 }
 #cardapio{
     display: inline-block;
-
-}
-#cardapio > ul{
-    list-style-type: none;
-    columns: 4;
-    margin: 40px 20px 5px 20px;
-    max-width: 2000px;
-}
-#cardapio > li{
-    margin: 70px;
 }
 
+/* */
 
 

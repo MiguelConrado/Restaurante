@@ -1,10 +1,18 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@font-face{
+    font-family:japan-font;
+    src: url(fontes/HIROMISAKE.ttf) format('truetype');
+}
 *{
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --font1: japan-font,sans-serif;
+}
+
 body{
     background-image: url(imagens/bg-inicio.png);
     background-repeat: no-repeat;
@@ -21,12 +29,12 @@ main{
     & h1{
         margin-top: 200px;
         margin-bottom: 60px;
-        font-family: Inter, sans-serif;
+        font-family: var(--font1),Inter, sans-serif;
         font-size: 75px;
         font-weight: 200;
     }
     & span{
-        font-size: 80px;
+        font-size: 90px;
         font-weight: 500;
     }
     & p{
@@ -35,7 +43,7 @@ main{
         margin: auto auto 60px auto;
         font-family: Inter, sans-serif;
         font-size: 30px;
-        font-weight: 200;  
+        font-weight: 400;
     }
     
 }
@@ -76,8 +84,9 @@ button{
     width: 160px;
     margin: 10px;
     
-    font-size: 25px;
-    font-family: Inter, sans-serif;
+    font-variant: small-caps;  
+    font-size: 20px;
+    font-family: var(--font1);
     text-align: center;
     text-decoration: none;
     
@@ -87,6 +96,7 @@ button{
 }
 button:hover{
     transform: translateY(-10px);
+    font-size: 35px;
 }
 
 /* 450px media */
